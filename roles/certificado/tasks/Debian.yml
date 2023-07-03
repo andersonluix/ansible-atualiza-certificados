@@ -40,7 +40,7 @@
 #  with_items: "{{ path.results }}"
 #  when: item.stat.exists
 
-- name: Instalando certificado (debian way)
+- name: Instalando certificado
   copy:
     src: "{{ item.item }}.bundle"
     dest: "{{ item.stat.path }}"
