@@ -1,6 +1,6 @@
 ---
 
-- name: restart web service
+- name: restart webserver
   service:
     name: "{{ web_service_name | default('httpd') }}"
     state: restarted
