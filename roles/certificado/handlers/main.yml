@@ -2,7 +2,7 @@
 
 - name: restart webserver
   service:
-    name: "{{ web_service_name | default('httpd') }}"
+    name: "{{ web_service_name.stdout | default('httpd') }}"
     state: restarted
 
 
