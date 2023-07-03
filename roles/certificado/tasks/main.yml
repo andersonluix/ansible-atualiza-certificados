@@ -3,7 +3,11 @@
 - name: Populate service facts
   service_facts:
 
-
+- name: instala o lsof
+  ansible.builtin.package:
+    name: lsof
+    state: present
+    
 - name: roda as tarefas referente ao apache
   ansible.builtin.include_tasks:
     file: "{{ ansible_distribution_file_variety }}.yml"
