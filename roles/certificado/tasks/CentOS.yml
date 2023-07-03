@@ -1,0 +1,18 @@
+---
+
+#TO-DO 
+
+#valida o diretorio da key e guarda se houver
+
+#copia a key especifica 
+
+#valida o diretorio do cert e guarda se houver
+
+#copia o cert especifica - cert + intermediate
+#restarta o httpd
+
+
+# - name: Ensure apache is running
+#   ansible.builtin.service:
+#     name: httpd
+#     state: started

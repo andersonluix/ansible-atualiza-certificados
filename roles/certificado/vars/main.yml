@@ -1,0 +1,27 @@
+#vars for atualiza certificado
+
+#qual dominio do certificado que a vm receberá
+#Descomenta os dominios que vao ser usados/atualizados
+dominios:
+   - biblioteca.ufpb.br
+  # - cchla.ufpb.br
+  # - cchsa.ufpb.br
+  # - ccj.ufpb.br
+  # - ccm.ufpb.br
+   - ccs.ufpb.br
+  # - ccsa.ufpb.br
+   - ce.ufpb.br
+  # - ci.ufpb.br
+  # - dbm.ufpb.br
+   - lema.ufpb.br
+  # - pra.ufpb.br
+  # - prg.ufpb.br
+  # - proex.ufpb.br
+  # - progep.ufpb.br
+  # - prpg.ufpb.br
+  # - reitoria.ufpb.br
+   - sead.ufpb.br
+  # - security.ufpb.br
+  # - sti.ufpb.br
+  # - ufpb.br
+

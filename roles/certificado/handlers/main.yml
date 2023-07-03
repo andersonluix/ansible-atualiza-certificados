@@ -1,0 +1,22 @@
+---
+
+- name: restart web service
+  service:
+    name: "{{ web_service_name | default('httpd') }}"
+    state: restarted
+
+
+# - name: restart apache
+#   service:
+#     name: apache2
+#     state: restarted
+
+# - name: restart nginx
+#   service:
+#     name: nginx
+#     state: restarted 
+
+# - name: restart httpd
+#   service:
+#     name: httpd
+#     state: restarted 

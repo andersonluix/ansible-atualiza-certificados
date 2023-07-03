@@ -1,0 +1,6 @@
+---
+- name: playbook de atualizacao dos certificados
+  hosts: debian
+  become: yes
+  roles:
+    - certificado
