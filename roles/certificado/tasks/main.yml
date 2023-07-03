@@ -14,7 +14,7 @@
 
 #Se o comando não retorna nada vai falhar o script
 - name: Busca o nome do webservice rodando
-  shell: "lsof -i :80 | grep LISTEN | cut -d ' ' -f 1"
+  shell: "lsof -ni :443 | grep LISTEN | cut -d ' ' -f 1 | tail -n 1"
   register: web_service_name
 
 - name: Ensure webserver is running
