@@ -19,6 +19,6 @@
 
 - name: Ensure webserver is running
   ansible.builtin.service:
-    name: "{{ web_service_name }}"
+    name: "{{ web_service_name.stdout }}"
     state: started
 
