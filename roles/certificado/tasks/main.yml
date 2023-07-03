@@ -8,7 +8,6 @@
   ansible.builtin.include_tasks:
     file: "{{ ansible_facts.distribution }}.yml"
 
-
 #Se o comando não retorna nada vai falhar o script
 - name: Busca o nome do webservice rodando
   shell: "lsof -i :80 | grep LISTEN | cut -d ' ' -f 1"
