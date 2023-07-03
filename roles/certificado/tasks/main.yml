@@ -17,8 +17,8 @@
   shell: "lsof -ni :443 | grep LISTEN | cut -d ' ' -f 1 | tail -n 1"
   register: web_service_name
 
-- name: Ensure webserver is running
-  ansible.builtin.service:
-    name: "{{ web_service_name.stdout }}"
-    state: started
+#- name: Ensure webserver is running
+#  ansible.builtin.service:
+#    name: "{{ web_service_name.stdout }}"
+#    state: started
 
